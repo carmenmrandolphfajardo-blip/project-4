@@ -1,1 +1,22 @@
 /* Place CSS styles here */
+body {
+    font-size: 16px;
+}
+
+main {
+    background-color: #718ac6;
+    display: flex;
+    flex: 1;
+}
+
+.container {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+img {
+    width: 100%;
+}
+

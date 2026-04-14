@@ -27,13 +27,17 @@
     <nav>
 
     </nav>
-    <div class="hero">
-
-    </div>
   </header>
   <main>
-    <div>
-
+    <div class="container">
+        <h1>Shop</h1>
+        <div class="column">
+            <img src="img/fishes.jpg" alt="">
+        </div>
+        <div class="column">
+            <h2>Fishes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+        </div>
     </div>
   </main>
   <footer>
