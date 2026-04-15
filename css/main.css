@@ -19,7 +19,7 @@ main {
 .content {
     display: flex;
     flex-direction: column;
-    max-width: 20%;
+    max-width: 80%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -30,12 +30,9 @@ img {
 }
 
 .row {
-    background-color: #87a0de;
     display: grid;
     grid-template-columns: 3fr 1fr;
     flex: 1;
-    margin-bottom: 32px;
-    padding: 32px;
-    border-radius: 16px;
-    margin-bottom: 100px;
+    gap: 20px;
+    padding: 20px;
 }
