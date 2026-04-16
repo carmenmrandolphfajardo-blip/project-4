@@ -1,4 +1,8 @@
 /* Place CSS styles here */
+body {
+    font-size: 16px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -9,6 +13,110 @@ main {
     display: flex;
     flex: 1;
 }
+
+h1 {
+    font-family: dreamboat, sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0;
+}
+
+h3 {
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 400;
+    font-size: 0.875em;
+    margin: 5px 0 20px 0;
+}
+
+.quantity {
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.input-number {
+    width: 80px;
+    padding: 0 12px;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+    border: 1px solid #ccc;
+    height: 40px;
+    user-select: none;
+}
+
+.input-number-decrement,
+.input-number-increment {
+    display: inline-block;
+    width: 30px;
+    line-height: 38px;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-number-decrement:active,
+.input-number-increment:active {
+    background: #ffffff;
+}
+
+.input-number-decrement {
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-number-increment {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.add-to-cart button {
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+    margin: 25px 0 15px 0;
+    border: none;
+    padding: 10px 20px;
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+    transition: translate 0.5s ease-in-out;
+}
+
+.add-to-cart button:hover {
+    cursor: pointer;
+    transform: translate(0px,-5px);
+}
+
+.add-to-cart button:focus{
+    background-color: #ffffff;
+    color: #000000;
+    border: #000000 solid 2px;
+}
+
+p {
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}  
 
 .container {
     min-height: 100vh;
@@ -31,7 +139,7 @@ img {
 
 .row {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     flex: 1;
     gap: 20px;
     padding: 20px;
