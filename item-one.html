@@ -32,28 +32,34 @@
         <h1>Shop</h1>
         <div class="row">
           <div class="column">
+            <div id="view">
               <img src="img/fishes.jpg" alt="">
+            </div>
           </div>
           <div class="column">
               <h2>Blue Window</h2>
               <h3>$15.00 USD</h3>
-              <div class="quantity">
-                <p>Quantity</p>
-                <span class="input-number-decrement">–</span>
-                <input class="input-number" type="text" value="1" min="1" max="10">
-                <span class="input-number-increment">+</span>
-              </div>
-              <div class="add-to-cart">
+            <div class="quantity">
+              <p>Quantity</p>
+              <span class="input-number-decrement">–</span>
+              <input class="input-number" type="text" value="1" min="1" max="10">
+              <span class="input-number-increment">+</span>
+            </div>
+            <div class="add-to-cart">
               <button onclick="document.location.href='cart.html'">Add to Cart</button>
-              </div>
-              <p>
-                8"x 10" print on glossy paper<br><br>
-                I took a lot of trips to the aquarium when I was growing up, so it was a natural choice for my "Memory-Sanpshot" series.
-                My favorite exhibit was the massive "Gulf of Mexico" tank, which bathed the dark room in a blue light.
-              </p>
+            </div>
+            <p>
+              8"x 10" print on glossy paper<br><br>
+              I took a lot of trips to the aquarium when I was growing up, so it was a natural choice for my "Memory-Sanpshot" series.
+              My favorite exhibit was the massive "Gulf of Mexico" tank, which bathed the dark room in a blue light.
+            </p>
           </div>
         </div>
     </div>
+    <dialog id="enhanced">
+      <button type="button" id="close">x</button>
+      <img src="img/fishes.jpg" alt="">
+    </dialog>
   </main>
   <footer></footer>
   </div>

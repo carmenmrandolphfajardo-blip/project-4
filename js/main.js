@@ -1,4 +1,16 @@
 // JS scripts placed here
+const dialog = document.getElementById("enhanced");
+const view = document.getElementById("view");
+const closeButton = document.getElementById("close");
+
+view.addEventListener ("click", () => {
+  dialog.showModal();
+});
+
+closeButton.addEventListener ("click", () => {
+  dialog.close();
+});
+
 (function() {
  
   window.inputNumber = function(el) {
