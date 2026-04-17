@@ -4,9 +4,69 @@ body {
 }
 
 header {
+    background-color: #aaaaaa;
+}
+
+.navigation {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 5%;
+    margin: 2%;
+}
+
+.logo img{
+    width: 40px;
+    height:auto;
+}
+
+.logo a{
+    color: #000000;
+    font-family: dreamboat, sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.logo a:hover {
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.logo a:focus {
+    border: 2px solid #ffffff;
+    outline: none;
+}
+
+.home a,
+.shop a,
+.info a,
+.cart a {
+    color: #000000;
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-underline-offset: 5px;
+    padding: 10px 20px;
+    transition: translate 0.5s ease-in-out;
+}
+
+.home a:hover,
+.shop a:hover,
+.info a:hover,
+.cart a:hover {
+    cursor: pointer;
+    transform: translate(0px,-5px);
+    filter: invert(1);
+}
+
+.home a:focus,
+.shop a:focus,
+.info a:focus,
+.cart a:focus {
+    border: 2px solid #ffffff;
+    outline: none;
 }
 
 main {
@@ -15,24 +75,20 @@ main {
 }
 
 h1 {
-    font-family: dreamboat, sans-serif;
-    font-weight: 400;
-    font-size: 3em;
-}
-
-h2 {
     font-family: asterisk-sans-variable, sans-serif;
     font-weight: 600;
     font-size: 2em;
     margin: 0;
 }
 
-h3 {
+h2 {
     font-family: asterisk-sans-variable, sans-serif;
     font-weight: 400;
     font-size: 0.875em;
     margin: 5px 0 20px 0;
 }
+
+
 
 .quantity {
     font-family: asterisk-sans-variable, sans-serif;
@@ -74,11 +130,14 @@ h3 {
 .input-number-decrement:hover,
 .input-number-increment:hover{
     cursor: pointer;
+    transform: translate(0px,-5px);
 }
 
 .input-number-decrement:active,
 .input-number-increment:active {
-    transform: translate(0px,-5px);
+    background-color: #ffffff;
+    color: #000000;
+    border: #000000 solid 2px;
 }
 
 .add-to-cart button {
@@ -170,4 +229,8 @@ img {
     background-color: #ffffff;
     color:#000000;
     border: 2px solid #000000;
+}
+
+footer {
+    background-color: #aaaaaa;
 }
