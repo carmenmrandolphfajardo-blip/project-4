@@ -198,6 +198,10 @@ img {
     width: 100%;
 }
 
+.column img {
+    margin-bottom: 20px;
+}
+
 .column img:hover{
     cursor: zoom-in;
 }
@@ -229,6 +233,41 @@ img {
     background-color: #ffffff;
     color:#000000;
     border: 2px solid #000000;
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+}
+
+.column-2 img {
+    width: 40%;
+    height: auto;
+}
+
+.column-2 a {
+    color: #000000;
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 600;
+    font-size: 1.5 em;
+    line-height: 2;
+    text-decoration-line: none;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+}
+
+.column-2 a:hover {
+    border:#000000 solid 2px;
+}
+
+@media (max-width:810px) {
+    .row-2 {
+        grid-template-columns: 1fr;
+    }
 }
 
 footer {
