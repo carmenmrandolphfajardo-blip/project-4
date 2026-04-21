@@ -31,16 +31,74 @@ header {
     padding: 5px 10px;
 }
 
-.home a,
-.shop a,
-.info a,
-.cart a {
+.shop a {
     color: #ffffff;
     font-family: asterisk-sans-variable, sans-serif;
     font-weight: 600;
     font-size: 1em;
     text-decoration: none;
     padding: 10px 20px;
+}
+
+.categories {
+    position: relative;
+    display: inline-block;
+}
+
+.categories button {
+    background-color: transparent;
+    color: #ffffff;
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+}
+
+.subcategories {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 80px;
+    z-index: 1;
+}
+
+.subcategories a {
+    color: black;
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.categories:hover .subcategories{
+    display: block;
+}
+
+.info {
+    position: relative;
+    display: inline-block; 
+}
+
+.info-list {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 80px;
+    z-index: 1;
+}
+
+.info-list a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;  
+}
+
+.info:hover .info-list {
+    display: block;
 }
 
 .navigation a:hover {
@@ -51,6 +109,12 @@ header {
 
 .navigation a:focus {
     border: 2px solid #ffffff;
+}
+
+@media (max-width:810px) {
+    .navigation {
+        flex-direction: column;
+    }
 }
 
 main {
@@ -248,9 +312,8 @@ img {
 }
 
 .column-2 a:focus {
-    border: #000000 2px solid;
+    border: #ffffff 2px solid;
     padding: 10px;
-    outline: none;
 }
 
 
@@ -262,4 +325,51 @@ img {
 
 footer {
     background-color: #352a9a;
+}
+
+footer h2 {
+    color: #ffffff;
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 2%;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 2%;
+}
+
+.quick-links a{
+    color: #ffffff;
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.quick-links a:focus {
+    border:#ffffff solid 2px;
+}
+
+@media (max-width:810px) {
+    footer h2 {
+        margin: 5%;
+    }
+    .quick-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 5%;
+    }
 }
