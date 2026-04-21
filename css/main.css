@@ -397,3 +397,9 @@ footer h2 {
     color: #000000;
     border: #000000 solid 2px;
 }
+
+@media (max-width:810px) {
+    .message {
+        margin-left: 22%;
+    }
+}
