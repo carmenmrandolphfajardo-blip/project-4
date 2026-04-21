@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Carmen-Mart</title>
+  <title>Cart Carmen-Mart</title>
   <meta name="description" content="E-commerce website for designer Carmen Randolph Fajardo">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,14 +23,46 @@
 </head>
 
 <body>
-  <header>
-    <nav></nav>
-  </header>
-  <main>
-    <h1>Cart</h1>
-    <button onclick="document.location.href='shop.html'">Continue Shopping</button>
-  </main>
-  <footer></footer>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="navigation">
+          <div class="logo">
+            <a href="index.html">
+              <img src="favicon.png">
+              Carmen-Mart
+            </a>
+          </div>
+          <div class="shop">
+            <a href="shop.html">Shop All</a>
+          </div>
+          <div class="categories">
+            <button class="dropdown">Categories ↓</button>
+            <div class="subcategories">
+              <a href="prints.html">Prints</a>
+              <a href="stickers.html">Stickers</a>
+              <a href="shirts.html">Shirts</a>
+            </div>
+          </div>
+          <div class="categories">
+            <button class="dropdown">Info ↓</button>
+            <div class="subcategories">
+              <a href="contact.html">Contact</a>
+              <a href="https://tinyurl.com/367e7ekr" target="_blank">Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Added to Cart</h1>
+      <div class="backbtn">
+        <button onclick="document.location.href='shop.html'">Continue Shopping</button>
+      </div>
+    </main>
+    <footer></footer>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
