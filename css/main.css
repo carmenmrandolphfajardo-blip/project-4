@@ -403,3 +403,25 @@ footer h2 {
         margin-left: 22%;
     }
 }
+
+.shop-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+}
+
+.shop-column a{
+    color: #000000;
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 600;
+    font-size: 1.5 em;
+    line-height: 2;
+    text-decoration-line: none;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    transition: translate 5s ease-in-out;
+}
