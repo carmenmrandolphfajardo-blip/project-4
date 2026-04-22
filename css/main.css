@@ -428,8 +428,10 @@ footer h2 {
 
 .hero {
     width: 500px;
-    height: 250px;
+    height: 300px;
     perspective: 1000px;
+    margin: 10% auto;
+    cursor: pointer;
 }
 
 .hero-inner {
@@ -449,7 +451,7 @@ footer h2 {
 }
 
 .hero-front {
-    background-color: #ff942f;
+    background-color: #ff8800;
     transform: rotateY(0deg);
 }
 
@@ -459,12 +461,16 @@ footer h2 {
     font-weight: 600;
     font-size: 2em;
     text-align: center;
-    padding-top: 20%;
+    padding-top: 25%;
 }
 
 .hero-back {
-    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
     border: 2px solid #000000;
+    background-color: #ffffff;
     color: #000000;
     font-family: asterisk-sans-variable, sans-serif;
     font-weight: 400;
@@ -473,9 +479,9 @@ footer h2 {
 }
 
 .hero-back img {
-    width: 10%;
+    width: 40%;
     height: auto;
-    margin: 10px;
+    margin-left: auto;
 }
 
 .hero:hover .hero-inner {
