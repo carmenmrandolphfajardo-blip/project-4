@@ -425,3 +425,61 @@ footer h2 {
     box-sizing: content-box;
     transition: translate 5s ease-in-out;
 }
+
+.hero {
+    width: 500px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.hero-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+}
+
+.hero-front, 
+.hero-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.hero-front {
+    background-color: #ff942f;
+    transform: rotateY(0deg);
+}
+
+.hero-front h1 {
+    color: #ffffff;
+    font-family: dreamboat, sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.hero-back {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    color: #000000;
+    font-family: asterisk-sans-variable, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    transform: rotateY(180deg);
+}
+
+.hero-back img {
+    width: 10%;
+    height: auto;
+    margin: 10px;
+}
+
+.hero:hover .hero-inner {
+    transform: rotateY(180deg)
+}
+
+

@@ -11,6 +11,11 @@ closeButton.addEventListener ("click", () => {
   dialog.close();
 });
 
+const hero = document.querySelector(".hero");
+
+hero.addEventListener ("click", () => {
+});
+
 (function() {
  
   window.inputNumber = function(el) {
