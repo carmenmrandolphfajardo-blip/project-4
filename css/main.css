@@ -447,6 +447,15 @@ footer h2 {
     text-underline-offset: 5px;
 }
 
+@media (max-width:810px) {
+    .shop-row {
+        grid-template-columns: 1fr;
+    }
+    .shop-column a{
+        font-size: 0.75em;
+    }
+}
+
 .hero {
     width: 500px;
     height: 300px;
@@ -487,7 +496,7 @@ footer h2 {
 
 .hero-back {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 20px;
     padding: 20px;
     border: 2px solid #000000;
@@ -499,8 +508,12 @@ footer h2 {
     transform: rotateY(180deg);
 }
 
+.hero-back p {
+    margin: 0;
+}
+
 .hero-back img {
-    width: 40%;
+    width: 50%;
     height: auto;
     margin-left: auto;
 }
@@ -508,6 +521,21 @@ footer h2 {
 .hero.flipped .hero-inner {
     transform: rotateY(180deg)
 }
+
+@media (max-width:810px) {
+    .hero {
+        width: 300px;
+        height: 200px;
+    }
+    .hero-front h1 {
+        font-size: 1.5em;
+    }
+    .hero-back {
+        font-size: 0.75em;
+        padding: 10px;
+        gap: 10px;
+    }
+}   
 
 .contact-form {
     display: flex;
@@ -520,6 +548,7 @@ footer h2 {
     font-family: asterisk-sans-variable, sans-serif;
     font-weight: 400;
     font-size: 1em;
+    margin-bottom: 10%;
 }
 
 .contact-form a {
@@ -565,4 +594,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
     cursor: pointer;
     transform: translate(0px,-5px);
+}
+
+@media (max-width:810px) {
+    .contact-form {
+        width: 90%;
+    }
 }
