@@ -236,6 +236,14 @@ h2 {
     border: #000000 solid 2px;
 }
 
+#size {
+    background-color: #ffffff;
+    width: 120px;
+    padding: 10px;
+    border: 2px solid #000000;
+    outline: none;
+}
+
 .add-to-cart button {
     background-color: #000000;
     color: #ffffff;
