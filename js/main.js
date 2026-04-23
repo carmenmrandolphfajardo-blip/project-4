@@ -3,24 +3,33 @@ const dialog = document.getElementById("enhanced");
 const view = document.getElementById("view");
 const closeButton = document.getElementById("close");
 
-view.addEventListener ("click", () => {
-  dialog.showModal();
-});
+if(view) {
+  view.addEventListener ("click", () => {
+    dialog.showModal();
+  });
+}
 
-closeButton.addEventListener ("click", () => {
-  dialog.close();
-});
+if(closeButton) {
+  closeButton.addEventListener ("click", () => {
+    dialog.close();
+  });
+}
 
 const hero = document.querySelector(".hero");
 
-hero.addEventListener ("click", () => {
-});
+if(hero) {
+  hero.addEventListener ("click", () => {
+    hero.classList.toggle("flipped");
+  });
+}
 
 const submitBtn = document.getElementById("submitbtn");
 
-submitBtn.addEventListener ("click", () => {
-  alert("Thank you for your message! We will get back to you as soon as possible.");
-});
+if(submitBtn) {
+  submitBtn.addEventListener ("click", () => {
+    alert("Thank you for your message! We will get back to you as soon as possible.");
+  });
+}
 
 
 (function() {

@@ -278,6 +278,8 @@ p {
 .column-2 img {
     width: 60%;
     height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .column-2 a {
@@ -295,6 +297,8 @@ p {
 
 .column-2 a:hover {
     transform: translate(0px,-5px);
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .column-2 a:focus {
@@ -398,9 +402,13 @@ footer h2 {
     border: #000000 solid 2px;
 }
 
+.header-container {
+    margin: 5% auto;
+}
+
 .shop-row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     flex: 1;
     gap: 20px;
@@ -418,6 +426,17 @@ footer h2 {
     flex-direction: column;
     box-sizing: content-box;
     transition: translate 5s ease-in-out;
+}
+
+.shop-column a img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.shop-column a:hover {
+    transform: translate(0px,-5px);
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .hero {
@@ -478,7 +497,7 @@ footer h2 {
     margin-left: auto;
 }
 
-.hero:hover .hero-inner {
+.hero.flipped .hero-inner {
     transform: rotateY(180deg)
 }
 
@@ -495,20 +514,20 @@ footer h2 {
     font-size: 1em;
 }
 
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    outline: none;
+}
+
 textarea {
     width: 100%;
     height: 50%;
     padding: 10px;
     border: 2px solid #000000;
     resize: none;
-}
-
-input[type="email"],
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #000000;
-    outline: none;
 }
 
 input[type="submit"] {

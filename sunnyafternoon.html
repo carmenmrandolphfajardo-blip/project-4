@@ -63,18 +63,20 @@
             </div>
           </div>
           <div class="column">
-            <h1>Side By Side</h1>
+            <h1>Sunny Afternoon</h1>
             <h2>$20.00 USD</h2>
             <div class="quantity">
               <p>Quantity</p>
-              <label>
-                <span class="input-number-decrement">–</span>
-                <input class="input-number" type="text" value="1" min="1" max="10">
-                <span class="input-number-increment">+</span>
-              </label>
-            </div>
-            <div class="add-to-cart">
-              <button onclick="document.location.href='cart.html'">Add to Cart</button>
+              <form action="./cart.html">
+                <label>
+                  <span class="input-number-decrement">–</span>
+                  <input class="input-number" type="text" value="1" min="1" max="10">
+                  <span class="input-number-increment">+</span>
+                </label>
+                <div class="add-to-cart">
+                  <button type="submit" value="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+              </form>
             </div>
             <p>
               8"x 10" print on semi-gloss cardstock<br><br>
