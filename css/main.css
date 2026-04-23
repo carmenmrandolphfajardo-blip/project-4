@@ -522,6 +522,16 @@ footer h2 {
     font-size: 1em;
 }
 
+.contact-form a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact-form a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
     width: 100%;
