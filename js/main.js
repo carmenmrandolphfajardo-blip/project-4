@@ -23,14 +23,13 @@ if(hero) {
   });
 }
 
-const submitBtn = document.getElementById("submitbtn");
+const flip = document.querySelector(".flip");
 
-if(submitBtn) {
-  submitBtn.addEventListener ("click", () => {
-    alert("Thank you for your message! We will get back to you as soon as possible.");
+if(flip) {
+  flip.addEventListener ("click", () => {
+    hero.classList.toggle("flipped");
   });
 }
-
 
 (function() {
  
